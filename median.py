@@ -10,3 +10,10 @@ while True:
     else:
         break
 print(numbers)
+numbers.sort()
+if (len(numbers) % 2) == 0:
+    num1 = numbers[(len(numbers) // 2) - 1]
+    num2 = numbers[len(numbers) // 2]
+    print((num1 + num2) / 2)
+else:
+    print(numbers[len(numbers) // 2])
